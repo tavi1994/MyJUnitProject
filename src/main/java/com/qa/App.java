@@ -8,6 +8,7 @@ import java.util.Scanner;
  */
 public class App 
 {
+
     public static void main( String[] args )
     {
         Scanner sc = new Scanner(System.in);
@@ -16,19 +17,20 @@ public class App
 
         System.out.println("Enter second number");
         int number2= sc.nextInt();
+        App app = new App();
 
-        System.out.println(returnNumber(number1,number2));
-        System.out.println(returnSum(number1,number2));
+        System.out.println(app.returnNumber(number1,number2));
+        System.out.println(app.returnSum(number1,number2));
+        sc.close();
+    }
 
-        }
 
 
-
-    public static int returnNumber(int number1,int number2){
+    public int returnNumber(int number1,int number2){
         return number1;
     }
 
-    public static int returnSum(int number1, int number2){
+    public int returnSum(int number1, int number2){
         return number1+number2;
     }
 }
