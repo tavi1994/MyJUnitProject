@@ -24,11 +24,21 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void areYouReturningRightNumber()
     {
         int number1=1;
         int number2=2;
 
         assertEquals("Are you returning the right number?", 1, App.returnNumber(number1,number2));
+
+    }
+
+    @Test
+    public void returningRightSum(){
+        int number1 = 2;
+        int number2 = 2;
+
+        assertEquals("Are you returning the right sum?", 4, App.returnSum(number1,number2));
+
     }
 }

@@ -18,11 +18,17 @@ public class App
         int number2= sc.nextInt();
 
         System.out.println(returnNumber(number1,number2));
+        System.out.println(returnSum(number1,number2));
+
         }
 
 
 
     public static int returnNumber(int number1,int number2){
         return number1;
+    }
+
+    public static int returnSum(int number1, int number2){
+        return number1+number2;
     }
 }
