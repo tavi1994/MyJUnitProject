@@ -32,12 +32,18 @@ public class AppTest
     @Test
     public void areYouReturningRightNumber()
     {
-        assertEquals("Are you returning the right number?", 1, app.returnNumber(1,2));
+      //  assertEquals("Are you returning the right number?", 1, app.returnNumber(1,2));
     }
 
     @Test
     public void returningRightSum(){
 
-        assertEquals("Are you returning the right sum?", 4, app.returnSum(2,2));
+        assertEquals("Are you returning the right sum?", 5, app.blackJack(5,2));
+        assertEquals("Are you returning the right sum?", 21, app.blackJack(5,21));
+        assertEquals("Are you returning the right sum?", 2, app.blackJack(22,2));
+        assertEquals("Are you returning the right sum?", 0, app.blackJack(5,5));
+        
+
+
     }
 }

@@ -11,26 +11,27 @@ public class App
 
     public static void main( String[] args )
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter first number ");
-        int number1 = sc.nextInt();
 
-        System.out.println("Enter second number");
-        int number2= sc.nextInt();
-        App app = new App();
-
-        System.out.println(app.returnNumber(number1,number2));
-        System.out.println(app.returnSum(number1,number2));
-        sc.close();
     }
 
 
 
-    public int returnNumber(int number1,int number2){
-        return number1;
+    public static int blackJack(int x, int y){
+        if (x > 21 && y > 21){
+            return 0;
+        }else if (x > 21){
+            return y;
+        }else if (y > 21) {
+            return x;
+        }else if(x==y){
+                return 0;
+
+        }else if (x > y){
+            return x;
+        }else{
+            return y;
+        }
+
     }
 
-    public int returnSum(int number1, int number2){
-        return number1+number2;
-    }
 }
